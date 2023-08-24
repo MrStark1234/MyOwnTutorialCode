@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+.bulb{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 250px;
+    rotate: -41deg;
+   align-items: center;
+   padding: 50px;
+   margin: 50px;
+}
+button{
+   margin: 100px;
+   padding: 10px 20px;
+   background-color: green;
+}
