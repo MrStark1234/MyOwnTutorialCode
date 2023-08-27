@@ -24,9 +24,14 @@ var btn = document.querySelector("#addBtn")
 var pic = document.querySelector("#pic")
 var love = document.querySelector("#love")
 var love2 = document.querySelector("#love2")
+var bdy = document.querySelector(".card")
+var crsr = document.querySelector("#cursor")
+
 
 var stat = 0
 var lstat = 0
+
+
 
 btn.addEventListener("click",function(){
     if(stat === 0){
@@ -64,9 +69,26 @@ love2.addEventListener("click",function(){
     love2.style.color = "red"
     lstat = 1
    }else{
-    love2.style.color = "white"
+    love2.style.color = "rgb(187, 182, 182)"
     lstat = 0
    }
+})
+
+bdy.addEventListener("mousemove",function(move){
+crsr.style.left = move.x+"px"
+crsr.style.top = move.y+"px"
+
+})
+bdy.addEventListener("mouseenter",function(move){
+crsr.style.opacity="1"
+
+
+})
+
+bdy.addEventListener("mouseleave",function(move){
+crsr.style.opacity="0"
+
+
 })
 
 
