@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:cursive;
 }
 
 html, body{
@@ -9,7 +10,7 @@ height: 100%;
 width: 100%;
 }
 
-.bulb{
+/* .bulb{
     width: 300px;
     height: 300px;
     border: 2px solid black;
@@ -26,4 +27,76 @@ button{
    margin: 100px;
    padding: 10px 20px;
    background-color: green;
+} */
+
+body{
+    background-color: rgb(176, 191, 249);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    text-align: center;
+    width: 400px;
+    height: 600px;
+    background-color: aliceblue;
+    border-radius: 20px;
+        padding: 15px;
+}
+.card img{
+    position: relative;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10%;
+}
+.card h1{
+    font-size: 35px;
+    color: rgb(42, 46, 46);
+}
+.card h5 {
+    font-size: 30px;
+    color: rgb(184, 7, 7);
+    padding: 20px;
+}
+
+#addBtn{
+    margin: 10px 20px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    padding: 5px;
+    font-weight: 500;
+
+}
+#love{
+    position: absolute;
+   color: white;
+   top: 45%;
+   left: 50%;
+   font-size: 70px;
+   transform: translate(-50%,-50%) scale(0);
+   opacity: 0;
+   transition: all ease 0.5s;
+    
+}
+
+.card i {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 54%;
+    left: 38.9%;
+    font-size: 20px;
+}
+p{
+    margin-top: 20px;
+    color: rgb(62, 121, 102);
+}
+span {
+    margin-top: 20px;
+    color: red;
 }
