@@ -5,26 +5,17 @@
   box-sizing: border-box;
   color: white;
   font-family: "Kanit", sans-serif;
-  /* font-family: "Signika Negative", sans-serif; */
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
-.super {
+
+#page-1 {
   width: 100%;
   height: 100%;
-  background-color: #1b1a1a;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#main {
-  width: 90%;
-  height: 90%;
   background-color: #000;
 }
 
@@ -58,7 +49,7 @@ button {
   font-weight: bolder;
   border: none;
 }
-#main h1 {
+#page-1 h1 {
   z-index: 1;
   position: relative;
   font-size: 100px;
@@ -66,14 +57,14 @@ button {
   align-items: center;
   justify-content: center;
 }
-#main h1 span {
+#page-1 h1 span {
   background-color: brown;
   margin: 0 30px;
   padding: 20px;
   font-size: 35px;
   border-radius: 40px;
 }
-#main h1:nth-child(2) {
+#page-1 h1:nth-child(2) {
   margin-top: 60px;
 }
 
@@ -88,7 +79,7 @@ button {
   height: 160px;
   border-radius: 30px;
   position: absolute;
-  top: 22%;
+  top: 18%;
   right: 25%;
 }
 #img-3 {
@@ -102,6 +93,79 @@ button {
   height: 150px;
   border-radius: 30px;
   position: absolute;
-  bottom: 12%;
+  bottom: 18%;
   right: 58%;
+}
+h5 {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  font-size: 25px;
+  transform: translate(-50%, 0);
+}
+.p-2 {
+  margin-top: 10%;
+  font-size: 25px;
+  text-align: center;
+  padding: 10%;
+}
+.page-2 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 0 30px;
+}
+.page-2-nav {
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px solid #dadada;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-2-nav-2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+.page-2-nav h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.page-2-nav span {
+  color: rgb(27, 250, 27);
+  font-weight: bolder;
+  font-size: 60px;
+}
+.page-2-nav h1 {
+  font-size: 30px;
+}
+.page2-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+}
+.left h1 {
+  font-size: 120px;
+}
+
+.left img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.right img {
 }
